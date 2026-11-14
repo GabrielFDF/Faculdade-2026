@@ -1,0 +1,25 @@
+create database cadastro;
+use cadastro;
+create table pessoas (
+   nome varchar(30),
+   idade tinyint(3),
+   sexo char(1),
+   peso float,
+   altura float, 
+   nacionalidade varchar(20)
+);
+//para sair do banco de dados
+drop database cadrasto; 
+// outro banco de dados
+create database cadastro
+default character set utf8
+default collate utf8_general_ci;
+creat table (
+   nome varchar(30) not null,
+   nascimento date,
+   sexo enum('m','f'),
+   peso decimal(5,2),
+   altura decimal(3,2),
+   nacionalidade varchar(20) default 'brasil',
+
+)default charset = utf8;
